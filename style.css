@@ -1,3 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+}
+
 h1 {
     color: brown;
+}
+
+.left {
+    width: 30%;
+    position: relative;
+}
+
+.main-image {
+    width: 100%;
+}
+
+.img-credit {
+    position: absolute;
+    color: white;
+    text-align: center;
+    bottom: 5px;
+    width: 100%;
+  }
+
+.right {
+    width: 70%;
+}
+
+.logocontainer {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    color: white;
+    text-align: center;
+    top: 18%;
+    width: 100%;
+    background: rgb(128, 128, 128, 0.2);
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logo { 
+    width: 20%;
 }
