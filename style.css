@@ -52,3 +52,69 @@ h1 {
 .logo { 
     width: 20%;
 }
+
+.r-text {
+    height: 35%;
+    background: whitesmoke;
+    font-size: larger;
+    font-weight: bolder;
+    padding-left: 40px;
+    padding-right: 80px;
+    padding-top: 80px;
+}
+
+form {
+    display: flex;
+}
+
+.right-form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    width: 30%;
+
+}
+
+.left-form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    width: 30%;
+
+}
+form, .form, .right-form, .left-form {
+    font-size: 20px;
+    
+}
+
+.form {
+    padding-left: 40px;
+    margin-bottom: 10px;
+}
+
+input {
+    border: 2px solid #d3d3d3;
+    padding: 6px;
+}
+input:focus {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+.error {
+    width: 100%;
+    padding: 0;  
+    font-size: 80%;
+    color: red;  
+}
+  
+  .error.active {
+    padding: 0.3em;
+  }
+
+em {
+    
+}
