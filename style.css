@@ -3,9 +3,28 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: "glastone";
+    src:
+      url("glastone-webfont.woff2") format("woff2"),
+      url("glastone-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: "shalma";
+    src: 
+        url("shalma-webfont.woff2") format("woff2"),
+        url("shalma-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     display: flex;
     flex-direction: row;
+    min-width: 432px;
 }
 
 h1 {
@@ -15,6 +34,7 @@ h1 {
 .left {
     width: 30%;
     position: relative;
+    font: 0.8em "shalma", sans-serif;
 }
 
 .main-image {
@@ -54,17 +74,19 @@ h1 {
 }
 
 .r-text {
-    height: 35%;
+    font: 4em "shalma", sans-serif;
+    height: 30%;
     background: whitesmoke;
     font-size: larger;
     font-weight: bolder;
     padding-left: 40px;
     padding-right: 80px;
-    padding-top: 80px;
+    padding-top: 50px;
 }
 
 form {
     display: flex;
+    font-size: 1px;
 }
 
 .right-form {
@@ -72,7 +94,7 @@ form {
     flex-direction: column;
     padding-left: 40px;
     width: 30%;
-
+    padding-bottom: 16px;
 }
 
 .left-form {
@@ -83,13 +105,18 @@ form {
 
 }
 form, .form, .right-form, .left-form {
-    font-size: 20px;
+    font-size: 15px;
+    font: 0.8em "glastone",
+    sans-serif;
     
 }
 
 .form {
     padding-left: 40px;
     margin-bottom: 10px;
+    padding-top: 15px;
+    font-weight: bolder;
+    font-size: 20px;
 }
 
 input {
@@ -115,6 +142,31 @@ input:invalid {
     padding: 0.3em;
   }
 
-em {
-    
+.rightfooter {
+    padding-top: 20px;
+    height: 27%;
+    background: whitesmoke;
+    padding-left: 40px;
+}
+
+button {
+    background-color: lightblue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 5px;
+    border: 1px solid lightblue;
+    margin-bottom: 25px;
+}
+
+button:hover {
+    box-shadow: 2px 2px 2px gray;
+}
+
+.log-in-link, .log-in-link:visited{
+    text-decoration: none;
+    color: lightblue;
+    font-size: large;
+    font-weight: bolder;
 }
